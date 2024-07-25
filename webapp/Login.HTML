@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        color: #333;
+        text-align: center;
+    }
+    form {
+        background-color: #fff;
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    p {
+        margin: 10px 0;
+    }
+    input[type="text"], input[type="password"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    h3 a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    h3 a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+<form action="http://localhost:8080/Assignment/users/users/users" method="post">
+    <p>Username: <input type="text" name="username" required></p>
+    <p>Password: <input type="password" name="password" required></p>
+    <p><input type="submit" name="submit" value="Login"></p>
+    <h3><a href="http://localhost:8080/Assignment/RegistrationResponse.html">Not yet registered</a></h3>
+</form>
+</body>
+</html>

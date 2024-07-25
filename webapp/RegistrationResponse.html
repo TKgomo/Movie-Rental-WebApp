@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Details</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        color: #333;
+    }
+    h1 {
+        text-align: center;
+        color: #4CAF50;
+    }
+    form {
+        background-color: #fff;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    p {
+        margin: 10px 0;
+    }
+    input[type="text"], input[type="password"], input[type="email"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+<h1>Register Clients</h1>
+<form action="http://localhost:8080/Assignment/UserRegistration/register" method="post">
+    <p>Username: <input type="text" name="username" required></p>
+    <p>Password: <input type="password" name="password" required></p>
+    <p>Email: <input type="text" name="email" required></p>
+    <p>Full Name: <input type="text" name="full_name" required></p>
+    <p>
+    Are you an admin?
+        <input type="radio" name="is_admin" value="Yes"> Yes
+        <input type="radio" name="is_admin" value="No"> No
+    </p>
+    <p><input type="submit" name="submit" value="Register"></p>
+    <p><a href="http://localhost:8080/Assignment/Login.HTML">Login Here!</a></p>
+</form>
+</body>
+</html>

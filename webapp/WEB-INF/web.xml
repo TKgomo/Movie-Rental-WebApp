@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+ 
+  <servlet>
+    <servlet-name>Assignment2Program</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>Assignment2Program</servlet-name>
+    <url-pattern>/Week/*</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>ViewUsers</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>ViewUsers</servlet-name>
+    <url-pattern>/ViewUser/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ViewMovies</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>ViewMovies</servlet-name>
+    <url-pattern>/ViewMovies/*</url-pattern>
+  </servlet-mapping>
+  
+  
+ 
+  <!-- Delete operation -->
+  <servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/delete/*</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Insert operation -->
+  <servlet>
+    <servlet-name>InsertServlet</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertServlet</servlet-name>
+    <url-pattern>/rent/*</url-pattern>
+  </servlet-mapping>
+ 
+  <!-- Update operation -->
+  <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/edit/*</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>FormRegister</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>FormRegister</servlet-name>
+    <url-pattern>/UserRegistration/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RentRegister</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>RentRegister</servlet-name>
+    <url-pattern>/RentRegistration/*</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>loginForm</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>loginForm</servlet-name>
+    <url-pattern>/user/*</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>MovieForm</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>MovieForm</servlet-name>
+    <url-pattern>/movies/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MovieAllForm</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>MovieAllForm</servlet-name>
+    <url-pattern>/rentals/*</url-pattern>
+  </servlet-mapping>
+  
+
+  <servlet>
+    <servlet-name>UserForm</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>Assignment.com</param-value>
+    </init-param>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>UserForm</servlet-name>
+    <url-pattern>/Week1/*</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
